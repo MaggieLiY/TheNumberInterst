@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>数趣</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/this.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipsternavtabs.css">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+</head>
+<body>
+<div class="CenWrap">
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="layout">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">政府</a></li>
+                <li class=""><a href="#">文化</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">商业</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+            <!--<form class="navbar-form navbar-left" role="search">-->
+            <!--<div class="form-group">-->
+            <!--<input type="text" class="form-control" placeholder="Search">-->
+            <!--</div>-->
+            <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">我要发布</a></li>
+                <li><a href="#">登入</a></li>
+                <li><a href="#">注册</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </div>
+</nav>
+<!--内容-->
+<div class="center_Num">
+
+
+        <div class="Cen_pho">
+            <img src="images/LOGO.png" alt=""/>
+        </div>
+       <div class="num_form cf ">
+           <div class="ipt_wrap">
+               <input class="ipt_search" id="search_keyword" name="query" value="" autocomplete="off" placeholder="请输入您要查找的可视化信息">
+              <button type="submit" class="btn_search"><i class="glyphicon glyphicon-search"></i></button> </span>
+           </div>
+       </div>
+        <div class="num_List MTop30">
+            <ul class="numUL">
+                <li><a href="#">热门搜索:</a></li>
+                <li><a href="#">文学</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">互联网</a></li>
+                <li><a href="#">国际经济</a></li>
+                <li><a href="#">信托保险</a></li>
+                <li><a href="#">民生</a></li>
+                <li><a href="#">国际经济</a></li>
+                <li><a href="#">信托保险</a></li>
+
+            </ul>
+        </div>
+        <div class="twoList">
+            <div class="fl twoListL">今日精选</div>
+            <div class="fl twoListR">热门推荐</div>
+        </div>
+    </div>
+
+<section>
+<div class="layout">
+    <div class="flipster">
+        <ul>
+            <li>
+                <a href="#" class="Button Block">
+                    <img src="images/banner01.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Button Block">
+                    <img src="images/banner02.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Button Block">
+                    <img src="images/banner01.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Button Block">
+                    <img src="images/banner03.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Button Block">
+                    <img src="images/banner02.png" alt=""/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<footer class="cf " id="bottom_tooler">
+    <div class="wrap-footer ">
+        <div class="footer layout tac ">
+            <span style="margin-right:70px;">地址：湖北省武汉市汉口解放大道1431号 邮编：430016 传真：027-85795027</span>
+            <span>鄂ICP备10011109号-1 武汉市总工会</span>
+        </div>
+    </div>
+
+</footer>
+
+</div>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery.flipster.js"></script>
+<script>
+    $(function(){
+        $(".flipster").flipster({
+            style: 'carousel',
+            start: 0 });
+    });
+
+//    $(function(){
+//        var browserHeight = $(window).height();  //获取浏览器窗口的高度
+//        var footerHeight =  $("#bottom_tooler").height();    //获取DIV高度
+//        var footerTop =  browserHeight  - footerHeight;       //计算DIV居上的距离
+//        $("#bottom_tooler").css("top" , footerTop);          //设置DIV 的css属性
+//    });
+</script>
+</body>
+</html>
